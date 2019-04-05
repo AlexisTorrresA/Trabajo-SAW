@@ -1,0 +1,44 @@
+<script src="/web/js/wikidata.js"></script>
+<link rel="stylesheet" href="/web/template/css/datatable/jquery.dataTables.min.css">
+<script src="/web/template/js/datatable/jquery.dataTables.min.js"></script>
+<script src="http://momentjs.com/downloads/moment.js"></script>
+<section>
+    <div class="span12 center">
+        <div class="row center">
+            <h5>Ingrese el nombre del Político</h5>
+            <div class="span12">   
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="row">
+                        <div class="span12 form-group">
+                            <input type="text" class="form-control" name="txt_buscador" id="buscador"/>
+                            <div class="alert alert-danger alert-dismissible" id="alerta">
+                                <strong>Error!</strong><br> Debes ingresar el nombre de un político para buscar.
+                            </div>        
+                            <p class="text-center">
+                                <button class="btn btn-large btn-theme margintop10 btn_buscar" id="btn_buscar" type="button">Buscar</button><br><br>
+                                <img src="/web/images/25.svg" alt="" id="loader">
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="span10 margin2 offset1" id="tabla_resultados">
+                <table id="table-servicios" class="ui celled table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Ocupación</th>
+                            <th>Fecha Nacimiento</th>
+                            <th>Partido Politico</th>
+                            <th>Ver Biografía</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="details">
+            </div>
+        </div>
+    </div>
+</section>

@@ -20,6 +20,7 @@ class politician {
                       OPTIONAL { ?item wdt:P735 ?nombre_de_pila. }
                       OPTIONAL { ?item wdt:P19 ?lugar_de_nacimiento. }
                       OPTIONAL { ?item wdt:P102 ?miembro_del_partido_pol_tico. }
+                      OPTIONAL { ?item wdt:P569 ?fec_nac. }
                     }';
 
         $sparqlQueryString = $Query;

@@ -1,0 +1,313 @@
+{
+     
+     "properties": {
+            "politico": {
+                "title": "Politico",
+                "type": "array",
+                "items": [
+                    {
+"type": "object",
+                        "properties": {
+                            "@id": {
+                                "title": "Id",
+                                "Minimum": 0,
+                                "type": "integer"
+                            },
+                            "datosPersonales": {
+                                "title": "Datos Personales",
+                                "type": "object",
+                                "properties": {
+                                    "img": {
+                                        "title": "Imagen",
+                                        "description": "Fotografía del politico",
+                                        "type": "object",
+                                        "properties": {
+                                            "@url": {
+                                                "title": "Url",
+                                                "type": "string",
+                                                "format": "uri"
+                                            }
+                                        },
+                                        "required": [
+                                            "@url"
+                                        ]
+                                    },
+                                    "nombres": {
+                                        "title": "Nombre",
+                                        "type": "string"
+                                    },
+                                    "apellidoPaterno": {
+                                        "title": "Apellido Paterno",
+                                        "type": "string"
+                                    },
+                                    "apellidoMaterno": {
+                                        "title": "Apellido Materno",
+                                        "type": "string"
+                                    },
+                                    "estadoCivil": {
+                                        "title": "Estado Civil",
+                                        "enum": [
+                                            "Soltero",
+                                            "Casado",
+                                            "Viudo",
+                                            "Divorciado",
+                                            "Separado",
+                                            "Conviviente"
+                                        ],
+                                        "type": "string"
+                                    },
+                                    "profesion": {
+                                        "title": "Profesión",
+                                        "type": "string"
+                                    },
+                                    "nacionalidad": {
+                                        "title": "Nacionalidad",
+                                        "type": "string"
+                                    },
+                                    "fechaNacimiento": {
+                                        "title": "Fecha Nacimiento",
+                                        "format": "date",
+                                        "type": "string"
+                                    },
+                                    "lugarNacimiento": {
+                                        "title": "Lugar Nacimiento",
+                                        "type": "string"
+                                    },
+                                    "fechaDefuncion": {
+                                        "title": "Fecha Defunción",
+                                        "format": "date",
+                                        "type": [
+                                            "null",
+                                            "string"
+                                        ]
+                                    },
+                                    "lugarDefuncion": {
+                                        "title": "Lugar Defunción",
+                                        "type": [
+                                            "null",
+                                            "string"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "img",
+                                    "nombres",
+                                    "apellidoPaterno",
+                                    "apellidoMaterno",
+                                    "estadoCivil",
+                                    "profesion",
+                                    "nacionalidad",
+                                    "fechaNacimiento",
+                                    "lugarNacimiento",
+                                    "fechaDefuncion",
+                                    "lugarDefuncion"
+                                ]
+                            },
+                              "trayectorias": {
+                                "title": "Trayectorias Politicas",
+                                "type": "object",
+                                "properties": {
+                                    "trayectoria": {
+                                        "title": "Trayectoria",
+                                        "type": "object",
+                                        "properties": {
+                                            "tipoParlamentario": {
+                                                "title": "Tipo Parlamentario",
+                                            
+                                               "enum": [
+                                                    "Senador",
+                                                    "Diputado"
+                                                ],
+                                                "type": "string"
+                                            },
+                                            "partidoPolitico": {
+                                                "title": "Partido Politico",
+                                                 "enum": [
+                                                "Unión Demócrata Independiente",
+                                                    "Renovación Nacional",
+                                                    "Partido Demócrata Cristiano",
+                                                    "Partido Por la Democracia",
+                                                    "Partido Comunista de Chile",
+                                                    "Partido Socialista de Chile",
+                                                    "Evolución Política",
+                                                    "Revolución Democrática",
+                                                    "País Progresista",
+                                                    "Partido Radical de Chile",
+                                                    "Federación Regionalista Verde Social",
+                                                    "Partido Humanista",
+                                                    "Partido Liberal de Chile",
+                                                    "Poder Ciudadano",
+                                                    "Partido Igualdad",
+                                                    "Partido Ecologista Verde",
+                                                    "Partido Regionalista Independiente Demócrata",
+                                                    "Ciudadanos",
+                                                    "Izquierda Anticapitalista de los Trabajadores",
+                                                    "Nuevo Tiempo",
+                                                    "Partido Anticorrupción Chile",
+                                                    "Movimiento por la Tierra, el Trabajo y la Libertad",
+                                                    "Partido Orden Republicano Por Mi Patria",
+                                                    "Partido Político Chile Feminista",
+                                                    "Unidad Cristiana Nacional"
+                                            
+                                                ],
+                                                "type": "string"
+                                              
+                                            },
+                                            "periodoInicio": {
+                                                "title": "Periodo Inicio",
+                                                "Minimum": 1810,
+                                                "type": "integer"
+                                            },
+                                            "periodoTermino": {
+                                                "title": "Periodo Término",
+                                                "Minimum": 1810,
+                                                "type": "integer"
+                                            },
+                                            "divisionElectoral": {
+                                                "title": "División Electoral",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "tipoParlamentario",
+                                            "partidoPolitico",
+                                            "periodoInicio",
+                                            "periodoTermino",
+                                            "divisionElectoral"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "trayectoria"
+                                ]
+                            }, "reseniaResumen": {
+                                "title": "Reseña Resumen",
+                                "description": "Resumen reseña bibliografica",
+                                "type": "string"
+                            },
+                            "familiaJuventud": {
+                                "title": "Familia Juventud",
+                                "description": "reseña epoca de juventud y familiar",
+                                "type": "string"
+                            },
+                            "estudiosVidaLaboral": {
+                                "title": "Estudios y Vida Laboral",
+                                "description": "reseña epoca de estudio y vida laboral",
+                                "type": "string"
+                            },
+                            "trayectoriaPoliticaPublica": {
+                                "title": "Trayectoria Politica y Publica",
+                                "description": "reseña trayectoria politica y publica",
+                                "type": "string"
+                            },
+                            "hemiciclos": {
+                                "type": "object",
+                                "properties": {
+                                    "hemiciclo": {
+                                        "type": "object",
+                                        "properties": {
+                                            "periodoInicio": {
+                                                "title": "Periodo Inicio",
+                                                "Minimum": 1810,
+                                                "type": "integer"
+                                            },
+                                            "periodoTermino": {
+                                                "title": "Periodo Término",
+                                                "Minimum": 1810,
+                                                "type": "integer"
+                                            },
+                                            "descripcion": {
+                                                "title": "Descripción",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "periodoInicio",
+                                            "periodoTermino",
+                                            "descripcion"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "hemiciclo"
+                                ]
+                            },   "bibliografias": {
+                                "type": "object",
+                                "properties": {
+                                    "bibliografia": {
+                                        "type": "array",
+                                        "items": [
+                                            {
+                                            "type": "object",
+                                                "properties": {
+                                                    "@url": {
+                                                        "title": "Url",
+                                                        "type": "string",
+                                                        "format": "uri"
+                                                    },
+                                                    "nombre": {
+                                                        "title": "Nombre",
+                                                        "type": "string"
+                                                    },
+                                                    "editorial": {
+                                                        "title": "Editorial",
+                                                        "type": "string"
+                                                    },
+                                                  "ano": {
+                                                        "title": "Año",
+                                                        "Minimum": 0,
+                                                        "type": "integer"
+                                                    },
+                                                     "descripcion": {
+                                                        "title": "Descripción",
+                                                        "type": "string"
+                                                    },
+                                                    "isbn": {
+                                                        "title": "isbn",
+                                                        "type": "string"
+                                                    },
+                                                  
+                                                  "disponible": {
+                                                        "title": "Disponibilidad",
+                                                        "Minimum": 0,
+                                                        "type": "integer"
+                                                    }
+                                                },
+                                                     "required": [
+                                                    "@url",
+                                                    "nombre",
+                                                    "editorial",
+                                                    "ano",
+                                                    "descripcion",
+                                                    "isbn",
+                                                    "disponible"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "bibliografia"
+                                ]
+                            }
+                        },
+                         "required": [
+                            "@id",
+                            "datosPersonales",
+                            "trayectorias",
+                            "reseniaResumen",
+                            "familiaJuventud",
+                            "estudiosVidaLaboral",
+                            "trayectoriaPoliticaPublica",
+                            "hemiciclos",
+                            "bibliografias"
+                        ]
+                    }
+                ]
+                        }
+                         },
+        "required": [
+            "politico"
+        ]
+                  
+}

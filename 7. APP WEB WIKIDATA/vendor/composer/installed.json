@@ -1,0 +1,107 @@
+[
+    {
+        "name": "bcosca/fatfree-core",
+        "version": "3.6.1",
+        "version_normalized": "3.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bcosca/fatfree-core.git",
+            "reference": "59f337842a502b69fd5e2de28dce9460d6138fed"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bcosca/fatfree-core/zipball/59f337842a502b69fd5e2de28dce9460d6138fed",
+            "reference": "59f337842a502b69fd5e2de28dce9460d6138fed",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2017-04-02T09:44:00+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "."
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0"
+        ],
+        "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
+        "homepage": "http://fatfreeframework.com/"
+    },
+    {
+        "name": "xfra35/f3-cron",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/xfra35/f3-cron.git",
+            "reference": "a35ce54da1998f9962487dc8c3337ab3127c925b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/xfra35/f3-cron/zipball/a35ce54da1998f9962487dc8c3337ab3127c925b",
+            "reference": "a35ce54da1998f9962487dc8c3337ab3127c925b",
+            "shasum": ""
+        },
+        "require": {
+            "bcosca/fatfree-core": "3.*"
+        },
+        "time": "2015-12-23T17:29:43+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "lib/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0"
+        ],
+        "description": "Job scheduling for the PHP Fat-Free Framework",
+        "homepage": "https://github.com/xfra35/f3-cron",
+        "keywords": [
+            "F3",
+            "cron",
+            "fatfree",
+            "scheduling"
+        ]
+    },
+    {
+        "name": "bcosca/fatfree",
+        "version": "3.6.1",
+        "version_normalized": "3.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bcosca/fatfree.git",
+            "reference": "2920fecebf4f01a3d5fc5a3dd909a66319e1ebea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bcosca/fatfree/zipball/2920fecebf4f01a3d5fc5a3dd909a66319e1ebea",
+            "reference": "2920fecebf4f01a3d5fc5a3dd909a66319e1ebea",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.6"
+        },
+        "time": "2017-04-02T10:02:41+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/base.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0"
+        ],
+        "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
+        "homepage": "http://fatfreeframework.com/"
+    }
+]
